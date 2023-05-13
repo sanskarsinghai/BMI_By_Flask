@@ -11,4 +11,4 @@ def bmical():
         bmi=str(w/(h*h))
     return render_template('index.html',bmi=bmi)
 
-app.run(port=5000)
+app.run(debug=True)

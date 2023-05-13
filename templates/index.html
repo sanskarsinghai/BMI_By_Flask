@@ -2,19 +2,20 @@
 <html>
 <head>
     <title>BMI Calculator</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}"
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
 </head>
-<body>
+<body >
+    <section class="bo">
     <h1>BMI Calculator</h1>
     <div class="main">
         <form method="POST" action="/">
             <div class="inputs">
+                <input type="text" name="weight" autocomplete="off">
                 <label>Enter the weight</label>
-                <input type="text" name="weight">
                 </div>
             <div class="inputs">
+                <input type="text" name="height" autocomplete="off">
                 <label>Enter the height</label>
-                <input type="text" name="height">
             </div>
             <div class="bu">
                 <button type="submit">Submit</button>
@@ -26,5 +27,6 @@
             Your BMI is<b> {{bmi}}</b>
         {% endif %}
     </div>
+</section>
 </body>
 </html>
