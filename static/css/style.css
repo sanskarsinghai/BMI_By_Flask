@@ -21,7 +21,7 @@ body{
     align-content: center;  
     flex-direction: column;
     margin-top: 8%;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
 }
 h1{
     text-align: center;
